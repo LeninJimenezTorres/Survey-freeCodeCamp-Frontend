@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <title>Emotional State Test</title>
+</head>
+
+<body>
+    <div class="background-page-A">
+    </div>
+    <div class="background-page-B">
+    </div>
+    <div class="big-container">
+        <header>
+            <h1 id="tittle">Emotional State Test</h1>
+            <p id="description">How confinement has affected you</p>
+        </header>
+        <div class="container">
+            <form action="#" id="survey-form">
+                <div class="personal-information">
+                    <p>Personal Information</p>
+                    <label id="name-label" for="name">
+                        Name:<br><input type="text" id="name" name="name-label" placeholder="Your name and surname" required>
+                    </label>
+                    <label id="email-label" for="email">
+                        Email:<br><input type="email" id="email" name="email-label" placeholder="Your personal email" required>
+                    </label>
+                    <label id="number-label" for="number" data-error="Wrong age">
+                        Age:<br><input type="number" id="number" name="number-label" step="1" min="0" max="100" placeholder="Your age" required>
+                    </label>
+                </div>
+                <div class="dropdown">
+                    <p>Now, time to talk</p>
+                    <p class="no-style">How long have you stayed at home?</p>
+                    <select name="dropdown" id="dropdown">
+                        <option disabled="" selected="" value="">Select the period of time</option>
+                        <option value="1m">One month</option>
+                        <option value="6m">less than six months</option>
+                        <option value="12m">less than a year</option>
+                        <option value="16m">Since the pandemic started</option>
+                    </select>
+                </div>
+                <div class="msm">
+                    <p>How do you feel right now?</p>
+                </div>
+                <div class="radio-buttons">
+                    <label class="fitted">
+                        <input type="radio" name="self-perception" value="good" checked>
+                        Very good!
+                    </label>
+                    <label class="fitted">
+                        <input type="radio" name="self-perception" value="no-bad">
+                        No bad
+                    </label>
+                    <label class="fitted">
+                        <input type="radio" name="self-perception" value="sad">
+                        To be honest, bad
+                    </label>
+                    <label class="fitted">
+                        <input type="radio" name="self-perception" value="need-help">
+                        I need help
+                    </label>
+                </div>
+                <div class="checkboxes">
+                    <p>What feelings do you usually have in a normal day:</p>
+                    <label class="fitted2">
+                        <input type="checkbox" name="feelings" id="bored" checked>
+                        I don't have interesting things to do
+                    </label>
+                    <label class="fitted2">
+                        <input type="checkbox" name="feelings" id="thoughtful">
+                        Sometimes thoughtful
+                    </label>
+                    <label class="fitted2">
+                        <input type="checkbox" name="feelings" id="stressed">
+                        I am usually stressed
+                    </label>
+                    <label class="fitted2">
+                        <input type="checkbox" name="feelings" id="depressed">
+                        May be a bit depressed
+                    </label>
+                    <label class="fitted2">
+                        <input type="checkbox" name="feelings" id="occuped">
+                        I I love to have time for myself
+                    </label>
+                </div>
+                <div class="text-area">
+                    <p>I would like to know more about your life before and after the pandemic</p>
+                    <textarea name="abstract" id="abstract" placeholder="Don't be shy"></textarea>
+                </div>
+                <div class="boton">
+                    <button type="submit" id="submit">Ok</button>
+                </div>
+        </div>
+</body>
+
+</html>
